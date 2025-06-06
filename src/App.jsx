@@ -2,16 +2,12 @@ import React from "react";
 //import './App.css';
 import './styles.css';
 import Boton from '../componentes/boton.jsx';
-import InputTexto from '../componentes/input-texto.jsx'
-import valores from '../componentes/datosFormulario.jsx'
 
-import InputCascada from "../componentes/input-cascada.jsx";
 
 import CasillaVerificada from "../componentes/casilla-verificacion.jsx";
 
-import { LlevarDatosTutor, LlevarDatosTutorCascada } from '../componentes/pasar-valores-formulario.jsx';
-//import LlevarDatosTutor from "../componentes/pasar-valores-formulario.jsx";
-//import LlevarDatosTutorCascada from "../componentes/pasar-valores-formulario-cascada.jsx";
+import LlevarDatosTutor from "../componentes/input-texto.jsx";
+import LlevarDatosTutorCascada from "../componentes/input-cascada.jsx";
 
 
 
@@ -29,9 +25,9 @@ return (
         <LlevarDatosTutor itemDeObjeto ='direccion' />
         <LlevarDatosTutor itemDeObjeto ='ci' />
         <LlevarDatosTutorCascada itemDeObjeto = "expedido" cascada ='ciudades' />
-        </div>        
+      </div>        
 
-        <div className="Datos-Adicionales"> 
+      <div className="Datos-Adicionales"> 
         <LlevarDatosTutor itemDeObjeto ='telefonoFijo' />        
         <LlevarDatosTutor itemDeObjeto ='celular' />
         <LlevarDatosTutor itemDeObjeto ='celularReferencia' />
@@ -51,8 +47,9 @@ return (
         <LlevarDatosTutorCascada itemDeObjeto = "plan" cascada ='planes'/>
         <LlevarDatosTutorCascada itemDeObjeto = "estadoCivil" cascada ='estados'/>        
         <LlevarDatosTutorCascada itemDeObjeto = "genero" cascada ='generos'/>
+
+      </div>
     </div>
-  </div>
   <button type="submit"> boton</button>
   </div>
 );
