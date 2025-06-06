@@ -1,0 +1,151 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: sans-serif;
+  }
+
+.titulo-principal{
+  font-size: 3rem;
+  text-align: center;
+  color: rgba(42, 42, 143, 0.993);
+  background-color: white;
+  padding: 5px;
+  padding-bottom: 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 45px;
+  z-index: 1000;
+  
+}
+
+.main{
+  padding-top: 45px;
+}
+
+
+.subtitulos{
+  padding-left: 2.5rem;    
+  font-size: large;
+  font-weight: bold;
+}
+
+.tutor{
+  background-color: rgba(42, 42, 143, 0.993);
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+}
+
+.tutorYOEstudiante{
+  justify-content: center;
+  justify-items: center;
+  margin: auto;
+}
+
+.checkboxText{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.Datos-Personales{
+  background-color: rgba(104, 104, 255, 0.479);
+}
+
+.Datos-Adicionales{
+  background-color: rgba(124, 124, 253, 0.336);
+}
+
+.division{    
+    display: flex;
+    color: rgb(0, 70, 0);
+    font-size: 1.6rem;
+    justify-content:flex-start;
+    padding: 1%;
+}
+
+.subtitulo-ingreso-de-datos{
+    padding: 1% 8% 1% 5%;
+    width: 25%;
+}
+
+.input{
+    width: 65%;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;   
+    margin-left: 20px; 
+    padding-left: 10px;;
+    border-radius: 10px;
+}
+
+.lineaSeparadora{
+  border-bottom: 4px dotted rgba(42, 42, 143, 0.993);
+  
+}
+
+.botones{
+  display: flex;  
+  justify-content: center;
+  padding: 4px;
+}
+
+.negrilla{
+  font-weight: bold;
+}
+
+/*Estudiante 1*/
+.Estudiante1{
+  background-color: rgb(8, 104, 4);
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.DP-Estudiante1{
+  background-color: rgba(96, 223, 113, 0.479);
+}
+.DA-Estudiante1{
+  background-color: rgba(221, 255, 212, 0.589);
+}
+
+
+@media (min-width: 768px) {
+  .subtitulos{
+    padding-left: 4rem
+  }
+
+  .Datos-Personales,  .Datos-Adicionales{
+    display: flex;
+    flex-basis: 3;
+    flex-wrap: wrap;
+  }
+  .division {
+    flex-basis: 30%; /* o 20%, 10%, etc. */
+    padding: 1.5rem;
+    justify-content: center;    
+    margin: auto;
+    
+  }
+  .Datos-Adicionales{
+    padding-top: 2rem;
+  }
+  
+  .subtitulo-ingreso-de-datos{
+    padding: 0;
+    width: 25%;
+  }
+
+  .input{
+    width: 80%;   
+    margin-left: 0.5rem; 
+    padding-left: 1rem;
+    border-radius: 10px;
+  }
+}
