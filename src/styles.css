@@ -26,24 +26,28 @@ html {
   
 }
 
-.main{
-  padding-top: 45px;
+.tutorInicial{
+  padding-top: 50px;
+  background-color: rgba(42, 42, 143, 0.993);
+  color: white;  
+  padding-bottom: 0.5rem;
+
+}
+.tutorEstudiante{
+  padding-top: 0.5rem;
+  background-color: rgba(42, 42, 143, 0.993);
+  color: white;  
+  padding-bottom: 0.5rem;
 }
 
 
 .subtitulos{
   padding-left: 2.5rem;    
   font-size: large;
-  font-weight: bold;
+  font-weight: bold;  
 }
 
-.tutor{
-  background-color: rgba(42, 42, 143, 0.993);
-  color: white;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 
-}
 
 .tutorYOEstudiante{
   justify-content: center;
