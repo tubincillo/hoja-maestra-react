@@ -3,7 +3,10 @@ import valores from "./datosFormulario"
 
 
 //Este componente es para que en el modulo principal solo se haga referencia al objeto que se desea obtener datos con "[props.itemDeObjeto]" funciona con el siguiente componente: InputTexto
-const LlevarDatosTutor =(props) =>{
+const LlevarDatosTutor = ({ inputValue, setInputValue, ...props }) => {
+    const handleChange = (event) => {                   //añadido
+    setInputValue(event.target.value);                  //añadido
+    };                                                  //añadido
 
     const dato= valores[props.itemDeObjeto]; {/*Se usa props pues se pasara como parametro el objeto principal Ejemplo; Nombre y con InputTexto se va poniendo los atributos que corresponden, todos estan en el objeto "valores" */}
     return(
@@ -13,7 +16,9 @@ const LlevarDatosTutor =(props) =>{
         id={dato['id'] + props.estudiante} 
         placeholder={dato['placeholder']} 
         className={dato['className']+ props.estudiante} 
-        type={dato['type']}  
+        type={dato['type']}
+        value={inputValue}
+        onChange={handleChange}
     />
     );
 };
@@ -29,7 +34,10 @@ function InputTexto(props){   //El prop es el parametro para el cual se va metie
                 className={props.className} 
                 type={props.type} 
                 placeholder={props.placeholder} 
-                required={props.required} />
+                required={props.required} 
+                value={props.value}
+                onChange={props.onChange}
+        />
             {/*Todos los valores son admitidos como parametros que se sacan de un Objeto "valores* que tiene toda la info*/}
         </div>
     );
