@@ -1,29 +1,127 @@
 function Convenio({ datosTutor }) {
 //array que contiene la redaccion del ---2do Articulo---
-const articulo2=[{
-    parte1: `<span>SEGUNDA. (GUÍA DE ESTUDIO).-</span>La “Guía de Estudio” entregada al estudiante al momento de su inscripción, es una guía explicativa que detalla el contenido del programa académico, los derechos y obligaciones del  estudiante, los permisos académicos, los compromisos asumidos por los mismo, entre otros. Entre los puntos a resaltar mencionamos los siguientes:  <br> <br>`,
-    parte2: `a) La asistencia mínima será controlada de manera semanal siendo 4 clases obligatorias semanales como mínimo para cada estudiante.  <br>`,
-    parte3: `b) La nota de aprobación para cada nivel (o STEP) de estudio está definida en 80 puntos sobre 100. <br>`,
-    parte4: `c) Las clases inician en un horario en punto, por lo cual el estudiante tendrá la obligación de estar presente en el instituto 5 minutos antes de la hora de su clase y solo tendrá una tolerancia de hasta 5 minutos después de la hora señalada."`
-    }];
+
 
   return (
     <div>
-      <h2>Convenio</h2>
-      <p>Yo {datosTutor.nombre} {datosTutor.apellido}, mayor de edad, con domicilio en calle 
-        {datosTutor.direccion} con cédula de identidad {datosTutor.ci} expedido en la ciudad de
-        {datosTutor.ciudad} de aquí en adelante denominado EL CLIENTE, declaro que; habiendo 
-        accedido a contratar los servicios  profesionales de parte del Instituto Técnico S.M.A.R.T., 
-        en mi calidad  de cliente de ésta, manifiesto que cumpliré con el presente convenio de  
-        la siguiente forma:</p>
+        <h2 className="titulo-convenio">CONVENIO EDUCATIVO</h2>
+        {/* PARRAFO INICIAL */}
+        <p className="texto">Yo {datosTutor.nombre} {datosTutor.apellidoP} {datosTutor.apellidoM}, mayor de edad, 
+        con domicilio en calle {datosTutor.direccion} con cédula de identidad {datosTutor.ci} 
+        expedido en la ciudad de {datosTutor.ciudad} de aquí en adelante denominado EL CLIENTE, 
+        declaro que; habiendo accedido a contratar los servicios  profesionales de parte del 
+        Instituto Técnico S.M.A.R.T., en mi calidad  de cliente de ésta, manifiesto que cumpliré 
+        con el presente convenio de la siguiente forma:</p>
 
-      <p><span>PRIMERA (SERVICIOS).-</span> La institución Smart Step Associates S.R.L. brindará a:
-      {datosTutor.nombre} {datosTutor.nombre} el servicio de curso de aprendizaje del idioma inglés 
-      en base al programa tecnológico “Let’s Do It My Way” de acuerdo a la currícula académica 
-      presentada en el documento “Guía de Estudio." El CLIENTE o estudiante al quedar inscrito en 
-      el Instituto, asume el compromiso de respetar y cumplir a cabalidad los reglamentos y las 
-      normas internas del mismo, entregadas en la mencionada “Guía de Estudio</p>
-      {/* Usa los demás datos como necesites */}
+        {/* ARTICULO 1*/}
+        <p className="texto"><span>PRIMERA (SERVICIOS).-</span> La institución Smart Step Associates S.R.L. brindará a:
+        {datosTutor.nombre} {datosTutor.apellidoP} el servicio de curso de aprendizaje del idioma inglés 
+        en base al programa tecnológico “Let’s Do It My Way” de acuerdo a la currícula académica 
+        presentada en el documento “Guía de Estudio." El CLIENTE o estudiante al quedar inscrito en 
+        el Instituto, asume el compromiso de respetar y cumplir a cabalidad los reglamentos y las 
+        normas internas del mismo, entregadas en la mencionada “Guía de Estudio</p>
+
+        {/* ARTICULO 2*/}
+        <p className="texto"><span>SEGUNDA. (GUÍA DE ESTUDIO).-</span>La “Guía de Estudio” entregada al estudiante al 
+        momento de su inscripción, es una guía explicativa que detalla el contenido del programa académico, 
+        los derechos y obligaciones del  estudiante, los permisos académicos, los compromisos asumidos por 
+        los mismo, entre otros. Entre los puntos a resaltar mencionamos los siguientes:</p>
+
+        {/* ARTICULO 3*/}
+        <p className="texto"> <span>TERCERA. (CURSO O CARRERA Y DURACIÓN).- </span> El estudiante queda inscrito en el siguiente 
+        curso(s) o carrera(s):</p>
+
+        {/* TABLA ARTICULO 3*/}
+        <table>
+            <tr>
+                <th>Nombre del estudiante</th>
+                <th>Curso al que esta Inscrito</th>
+            </tr>
+            <tr>
+                <td>{datosTutor.nombre} {datosTutor.apellidoP} {datosTutor.apellidoM}</td>
+                {/* <td>${nombreCursoA}</td>*/ }
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>Doe</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>Doe</td>
+            </tr>
+        </table>
+
+        {/* ARTICULO 4*/}
+        <p className="texto"> 
+        <span>CUARTA. (FECHAS DE PAGOS).- </span> Los pagos se realizarán de la siguiente forma:
+        a) Pago único de Inscripción equivalente a  400 (CUATROCIENTOS  00/100 BOLIVIANOS) 
+        ****ver la correcta redaccion****,
+        b) El pago de las mensualidades, es equivalente a Bs. 285 (DOSCIENTOS OCHENTA Y CINCO 00/100 BOLIVIANOS) 
+        por cada usuario que tome el curso,  por cada mes de estudio en el Instituto, mismo que debe efectuarse en 
+        fecha 25 de cada mes correspondiente, acorde al día de inicio del programa. La cantidad total de mensualidades 
+        depende del curso al cual  el estudiante se encuentre inscrito.,
+
+        Cabe resaltar que el estudiante no incurrirá en gastos adicionales con la excepción del pago del (los) certificado(s) 
+        y la documentación requerida para su trámite a la finalización de su programa de estudios.`
+        </p>
+
+        {/* ARTICULO 5*/}
+        <p className="texto"> 
+        <span>QUINTA. (RETRASO DE PAGOS).–</span> EL CLIENTE declara expresamente que los pagos a realizarse de 
+        manera mensual serán efectuados en la fecha pactada, sin incurrir en ningún retraso que ocasione algún 
+        tipo de perjuicio a la institución.
+        </p>
+
+        {/* ARTICULO 6*/}
+        <p className="texto"> 
+        <span>SEXTA. (PERMISOS).-</span> La solicitud de todo permiso por inasistencia a clases debe ser presentada
+         por escrito y junto a los respaldos necesarios. Los permisos no podrán ser superiores a un mes ni menores a
+          una semana, debido a motivos pedagógicos y educativos de influencia académica. Al no cumplir con esta cláusula,
+           el permiso no tendrá validez.
+        </p>
+
+
+        {/* ARTICULO 7*/}
+        <p className="texto"> 
+        <span>SÉPTIMA. (HORARIOS).-</span> Cabe resaltar que las clases deben ser organizadas día a día según la currícula
+         académica asignada, y la reserva de horarios debe realizarse con un mínimo de 24 Hrs. de anticipación de acuerdo a
+         la programación definida por la institución. Debiendo el estudiante tener la disponibilidad pertinente para tal efecto.
+        </p>
+
+
+        {/* ARTICULO 8*/}
+        <p className="texto"> 
+        <span>OCTAVA. (RECISIÓN).-</span> La recisión del presente Convenio de Prestación de Servicios Educativos, se podrá 
+        efectuar por la voluntad de cualesquiera de las partes en cualquier momento sin que exista ninguna carga o compromiso
+         adicional posterior para ninguna de ellas.
+        </p>
+
+
+        {/* ARTICULO 9*/}
+        <p className="texto">
+        <span>NOVENA. (COMPROMISO).-</span> Por lo tanto, EL CLIENTE se compromete a cumplir con todo el reglamento establecido
+         en la “GUÍA DE ESTUDIO” y en el presente convenio, teniendo en cuenta que de no cumplirlo a cabalidad no se obtendrán 
+         los resultados ofrecidos. 
+        </p>
+
+
+        {/* ARTICULO 10*/}
+        <p className="texto">
+        <span>DÉCIMA. (CONFORMIDAD).-</span> Ambas partes declaramos nuestra conformidad con cada una de las cláusulas que anteceden 
+        sin que mediare presión de ningún modo y declaramos nuestra completa aceptación con lo suscrito en el presente documento 
+        comprometiéndonos a su fiel y estricto cumplimiento. 
+        </p>
+
+
+        {/* ARTICULO 11*/}
+        <p> 
+            <table class="firma">
+            <tr>
+                <td>{datosTutor.nombre} {datosTutor.apellidoP} {datosTutor.apellidoM}</td>
+                <td>RESPONSABLE DEL INSTITUTO</td>
+            </tr>
+            </table>
+        </p>
     </div>
   );
 }
@@ -31,44 +129,6 @@ const articulo2=[{
 export default Convenio;
 
 /*
-//Obtencion del las VAriables alojadas Localmente
-
-const nombre = localStorage.getItem('nombre-name');
-const apellidoPaterno = localStorage.getItem('apellidoPaterno-name');
-const apellidoMaterno = localStorage.getItem('apellidoMaterno-name');
-const direccion = localStorage.getItem('direccion-name');
-const ci = localStorage.getItem('ci-name');
-const expedido = localStorage.getItem('expedido-name');
-
-//Para que los datos sean obtenidos pero que no sean visibles en la pagina
-
-document.getElementById('nombre-name').textContent = nombre;
-document.getElementById('nombre-name').style.display = "none";
-
-document.getElementById('apellidoPaterno-name').textContent = apellidoPaterno;
-document.getElementById('apellidoPaterno-name').style.display = "none";
-
-document.getElementById('apellidoMaterno-name').textContent = apellidoMaterno;
-document.getElementById('apellidoMaterno-name').style.display = "none";
-
-document.getElementById('direccion-name').textContent = direccion;
-document.getElementById('direccion-name').style.display = "none";
-
-document.getElementById('ci-name').textContent = ci;
-document.getElementById('ci-name').style.display = "none";
-
-document.getElementById('expedido-name').textContent = expedido;
-document.getElementById('expedido-name').style.display = "none";
-
-
-const texto1erParrafo=document.getElementById('texto-1erParrafo');
-const texto1erArticulo=document.getElementById('texto-1erArticulo');
-const texto2doArticulo=document.getElementById('texto-2doArticulo');
-const texto3erArticulo=document.getElementById('texto-3erArticulo');
-const tabla=document.getElementById('tablita');
-const texto4toArticulo=document.getElementById('texto-4toArticulo');
-const textoarticulosDel5Al10=document.getElementById('texto-articulosDel5Al10');
-const textoFirmas = document.getElementById('texto-firmas');
 
 
 //array con objetos del parrafo 1
@@ -157,13 +217,6 @@ const firmas=[{
         </table>
     `
 }]
-
-
-        
-
-
-
-
 
 
     //Muestra el contenido de articulos con los correspondientes datos al iniciar la pagina

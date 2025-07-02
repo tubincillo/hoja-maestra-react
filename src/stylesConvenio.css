@@ -1,0 +1,54 @@
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: sans-serif;
+  }
+  .titulo-convenio{
+    font-size: 3rem;
+    text-align: center;
+    color: rgba(42, 42, 143, 0.993);
+    padding: 5px;
+  }
+  
+  .texto{
+    padding: 1% 5% 2% 5%;
+    text-align: justify;
+    font-size: 1.6rem;   
+  
+  }
+
+  span{
+    font-weight: bold;
+  }
+  
+  table{
+    font-size: 1.6rem ;
+    text-align: center;
+    border-collapse: collapse;
+    margin: auto;;
+    
+
+
+  }
+
+  td, th {
+    padding: 1rem 3rem;
+    border: 1px solid black;        
+  }
+
+
+
+  .firmas td{
+    width: 30%;
+    text-align:center;
+    border: none;
+    
+  }

@@ -13,11 +13,19 @@ const valores = {
         required: 'Required'
         },
     
-    apellido: {
-        texto: 'Apellido: ',
-        id: 'apellido',
+    apellidoP: {
+        texto: 'Apellido Paterno: ',
+        id: 'apellidoP',
         placeholder:'Ej. Ordoñez',
-        className: 'input apellido',
+        className: 'input apellidoP',
+        type: 'text',
+        required: 'true'
+        },
+    apellidoM: {
+        texto: 'Apellido Materno: ',
+        id: 'apellidoM',
+        placeholder:'Ej. Ordoñez',
+        className: 'input apellidoM',
         type: 'text',
         required: 'true'
         },

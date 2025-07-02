@@ -15,7 +15,8 @@ return (
 
     <div className='Datos-Personales'>
       <LlevarDatosTutor itemDeObjeto ='nombre'   estudiante={numeroEstudiante} inputValue={datosTutor.nombre} setInputValue={handleInputChange('nombre')}/>
-      <LlevarDatosTutor itemDeObjeto ='apellido' estudiante={numeroEstudiante} inputValue={datosTutor.apellido} setInputValue={handleInputChange('apellido')}/>
+      <LlevarDatosTutor itemDeObjeto ='apellidoP' estudiante={numeroEstudiante} inputValue={datosTutor.apellidoP} setInputValue={handleInputChange('apellidoP')}/>
+      <LlevarDatosTutor itemDeObjeto ='apellidoM' estudiante={numeroEstudiante} inputValue={datosTutor.apellidoM} setInputValue={handleInputChange('apellidoM')}/>
       <LlevarDatosTutor itemDeObjeto ='direccion'estudiante={numeroEstudiante} inputValue={datosTutor.direccion} setInputValue={handleInputChange('direccion')}/>
       <LlevarDatosTutor itemDeObjeto ='ci'       estudiante={numeroEstudiante} inputValue={datosTutor.ci} setInputValue={handleInputChange('ci')}/>
       <LlevarDatosTutorCascada itemDeObjeto = "expedido" cascada ='ciudades' />

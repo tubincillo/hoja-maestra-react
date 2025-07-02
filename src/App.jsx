@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './styles.css';
+import './stylesConvenio.css'
 import CasillaVerificada from '../componentes/casilla-verificacion.jsx';
 
 
@@ -11,7 +12,8 @@ function App() {
   const [checkboxState, setCheckboxState] = useState(false);
   const [datosTutor, setDatosTutor] = useState({
     nombre: '',
-    apellido: '',
+    apellidoP: '',
+    apellidoM: '',
     direccion: '',
     ci: '',
     telefonoFijo: '',
